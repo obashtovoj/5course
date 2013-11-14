@@ -1,0 +1,25 @@
+document.write('<tr>'); 
+document.write('<td height="40"></td>'); 
+document.write('</tr>'); 
+document.write('<tr>'); 
+document.write('<td class="back8" style="padding-left: 55px;">'); 
+document.write('<table width="200" border="0" cellpadding="0" cellspacing="0">'); 
+document.write('<tr>');  
+document.write('<td><a href="/about/presentations/company/" title="Все о технологиях и компании Бизнес Инжиниринг Групп (БИГ)"><img src="/images/biggeneral/pres/presentations.png" width="212" height="64" border="0" alt="Все о технологиях и компании Бизнес Инжиниринг Групп (БИГ)"></a></td>'); 
+document.write('</tr>'); 
+document.write('<tr>');  
+document.write('<td><img src="/images/1x1.gif" width="1" height="10" border="0" alt=""></td>'); 
+document.write('</tr>'); 
+document.write('<tr>');  
+document.write('<td align="left" valign="top"><a href="/about/presentations/company/" class="left_link">Видео-презентация, в которой рассказано о разработанных компанией БИГ методах, подходах и инструментах направленных на повышение эффективности бизнеса </a></td>'); 
+document.write('</tr>'); 
+document.write('<tr>');  
+document.write('<td><img src="/images/1x1.gif" width="1" height="3" border="0" alt=""></td>'); 
+document.write('</tr>'); 
+document.write('<tr>');  
+document.write('<td align="right" valign="middle" class="btnnav" nowrap><a href="/about/presentations/company/"><b>подробнее</b> <img border="0" src="/images/more_arrows.gif" width="17" height="9" align="absmiddle" alt="подробнее..."></a></td>'); 
+document.write('</tr>'); 
+document.write('</table>'); 
+document.write('</td>'); 
+document.write('</tr>');  
+

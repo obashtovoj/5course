@@ -1,0 +1,73 @@
+@import url(http://www.google.com/cse/api/branding.css);
+@import url(http://www.google.com/cse/api/branding.css);
+
+body,td,th { font-family: Arial, Helvetica, sans-serif;	font-size: 16px; color: #000000}
+.style29 { color: #0099FF; font-weight: bold;	font-size: 18px;}
+.style30 { color: #00CCFF;	font-weight: bold;}
+.style31 {color: #3B93BF}
+.style10 {	color: #3B93BF;	font-weight: bold;}
+.style11 a, .style12 a, .style13 a, a:hover  {color:#000; font: bold 13px Arial}
+.style11 a:hover, .style12 a:hover, .style13 a:hover, a  {color:#3B93BF}
+td.tdbg {background:#DDFFFF; padding: 15px 0 0 15px}
+
+body {background:url('http://ubooks.com.ua/images/ubg.jpg') top left fixed;}
+h1, h2, h3, h4 { font: bold 16px Arial; color:#000000}
+h4.sidebar { background:url('http://ubooks.com.ua/images/tit.gif') top left no-repeat; height:36px; width:245px; padding: 8px 0 0 14px; border:none; font: bold 16px Arial; color:#ffffff}
+td.alf {background:url('http://ubooks.com.ua/images/alf.gif') top left no-repeat; height:28px; vertical-align:top; padding: 3px 0 0 0}
+td.alf div.style3 a, td.alf div.style4 a  {color:#ffffff!important; text-decoration:none; font: bold 14px Arial}
+.style3, .style4 {width:32px}
+.lmenu { font-size: 13px; text-decoration:none;color: #0A1046;  font-weight: bold; }
+a:hover.lmenu { color:#51BFFC;}
+#container {  padding-left: 200px;padding-right: 150px; }
+#container .column {  position: relative; float: left} 
+#center { width: 100%; }
+#left {  width: 200px;  right: 200px;  margin-left: -100%;}
+#right {  width: 150px;  margin-right: -150px; }
+#footer {  clear: both;}
+ul.newa {float:left; display:inline; margin: 5px 30px 0 0; width: 300px; list-style:square; font: normal 13px Arial}
+ul.newa li {color:#3B93BF; margin: 0 0 5px 0}
+ul.newa li a {color:#3B93BF; text-decoration:none}
+/*** IE6 Fix ***/
+* html #left {  left: 150px;}
+a.zakaz {
+	background-color: #1D98BF;
+    background-image: -moz-linear-gradient(center top , #1D98BF, #0C799B);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF!important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	-moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-transition: all 0.1s linear 0s;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    text-decoration: none;
+	font-size: 15px!important;
+    padding: 8px 12px;
+
+}
+
+
+a:hover.zakaz {
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+text-decoration: none!important;
+}
+
+#boxe {
+	height: 1150px;
+	width:650px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#contente {
+	height: 1150px;
+
+}

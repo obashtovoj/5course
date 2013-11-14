@@ -1,0 +1,455 @@
+unit Unit1;
+interface
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, FileCtrl, StdCtrls, MPlayer, MMSystem, ComCtrls, Buttons, ExtCtrls,
+  ShellAPI, Menus;
+type
+  TForm1 = class(TForm)
+    ListBox1: TListBox;
+    Button1: Tbutton;
+    MediaPlayer1: TMediaPlayer;
+    OpenDialog1: TOpenDialog;
+    Button3: TButton;
+    Memo1: TMemo;
+
+    Panel1: TPanel;
+    BitBtn1: TBitBtn;
+    Stop: TBitBtn;
+    Pause: TBitBtn;
+    Play: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    SaveDialog1: TSaveDialog;
+    Label5: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Timer1: TTimer;
+    TrackBar1: TTrackBar;
+    Label1: TLabel;
+    TrackBar2: TTrackBar;
+    PopupMenu1: TPopupMenu;
+    procedure Button1Click(Sender: TObject);
+    procedure ListBox1DblClick(Sender: TObject);
+    procedure PlayClick(Sender: TObject);
+    procedure StopClick(Sender: TObject);
+    procedure PauseClick(Sender: TObject);
+    procedure MediaPlayer1Notify(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Button3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
+    procedure TrackBar2Change(Sender: TObject);
+
+
+
+  private
+  { }
+  public
+    procedure CreateSubMenu;
+    procedure KatPopupHandler(Sender: TObject);
+  { }
+  end;
+
+  const
+   MCI_SETAUDIO = $0873;
+   MCI_DGV_SETAUDIO_VOLUME = $4002;
+   MCI_DGV_SETAUDIO_ITEM = $00800000;
+   MCI_DGV_SETAUDIO_VALUE = $01000000;
+   MCI_DGV_STATUS_VOLUME = $4019;
+ type
+   MCI_DGV_SETAUDIO_PARMS = record
+     dwCallback: DWORD;
+     dwItem: DWORD;
+     dwValue: DWORD;
+     dwOver: DWORD;
+     lpstrAlgorithm: PChar;
+     lpstrQuality: PChar;
+   end;
+type
+   MCI_STATUS_PARMS = record
+     dwCallback: DWORD;
+     dwReturn: DWORD;
+     dwItem: DWORD;
+     dwTrack: DWORD;
+   end;
+
+type
+  TNameMenuClick = record
+    Name: string;
+    HK: integer;
+    id: integer;
+    Value: char;
+  end;
+  ArNameMenuClick = array of TNameMenuClick;
+
+var
+  Form1: TForm1;
+  FileList:TStringList;
+
+//  MouseClick: array of array of TMouseClick;
+  NameMClick: ArNameMenuClick;
+  KatSubItems: array of TMenuItem;
+  MenuItemList: integer;
+  cdaDisk: boolean = false; 
+
+implementation
+{$R *.dfm}
+ procedure SetMPVolume(MP: TMediaPlayer; Volume: Integer);
+   { Volume: 0 - 1000 }
+ var
+   p: MCI_DGV_SETAUDIO_PARMS;
+ begin
+   { Volume: 0 - 1000 }
+   p.dwCallback := 0;
+   p.dwItem := MCI_DGV_SETAUDIO_VOLUME;
+   p.dwValue := Volume;
+   p.dwOver := 0;
+   p.lpstrAlgorithm := nil;
+   p.lpstrQuality := nil;
+   mciSendCommand(MP.DeviceID, MCI_SETAUDIO,
+     MCI_DGV_SETAUDIO_VALUE or MCI_DGV_SETAUDIO_ITEM, Cardinal(@p));
+ end;
+
+//возвращает букву 1-го привода CD-ROM или 0
+function GetFirstCDROM: Char;
+var
+  w: dword;
+  Root: string;
+  i: integer;
+begin
+  w := GetLogicalDrives;
+  Root := '#:\';
+  for i := 0 to 25 do
+  begin
+    Root[1] := Char(Ord('A') + i);
+    if (W and (1 shl i)) > 0 then
+    if GetDriveType(Pchar(Root)) = DRIVE_CDROM then
+    begin
+      Result := Root[1];
+      exit;
+    end;
+  end;
+  Result:='0';
+end;
+
+//*************
+function GetCDROM: ArNameMenuClick;
+var
+  w: dword;
+  Root: string;
+  i: integer;
+begin
+  w := GetLogicalDrives;
+  Root := '#:\';
+  for i := 0 to 25 do
+  begin
+    Root[1] := Char(Ord('A') + i);
+    if (W and (1 shl i)) > 0 then
+    if GetDriveType(Pchar(Root)) = DRIVE_CDROM then
+    begin
+      setlength(Result, length(Result)+1);
+      Result[length(Result)-1].Name := 'Диск - '+copy(Root, 1, 2);
+      Result[length(Result)-1].Value:=Root[1];
+    end;
+  end;
+end;
+
+//втсавлен ли диск
+Function DiskInDrive(ADriveLetter : Char) : Boolean;
+var
+  SectorsPerCluster,
+  BytesPerSector,
+  NumberOfFreeClusters,
+  TotalNumberOfClusters   : Cardinal;
+begin
+  Result := GetDiskFreeSpace(PChar(ADriveLetter+':\'),
+                              SectorsPerCluster,
+                              BytesPerSector,
+                              NumberOfFreeClusters,
+                              TotalNumberOfClusters);
+end;
+//Вывести все файлы директории
+procedure ListFileDir(Path: string);
+ var
+   SR: TSearchRec;
+ begin
+   if FindFirst(Path + '*.*', faAnyFile, SR) = 0 then
+   begin
+     repeat
+       if (SR.Attr <> faDirectory) then
+       begin
+       FileList.Add(Path+SR.Name);
+       end;
+     until FindNext(SR) <> 0;
+     FindClose(SR);
+   end;
+ end;
+
+procedure TForm1.KatPopupHandler(Sender: TObject);
+begin
+  with Sender as TMenuItem do
+  begin
+    MenuItemList:=MenuIndex;
+{    if length(MouseClick)<>0 then
+    Play:=true;
+    if not Edit then
+    PlayClick;}
+  end;
+end;
+
+procedure TForm1.CreateSubMenu;
+var
+  i: integer;
+begin
+  form1.PopupMenu1.Items.Clear;
+
+  setlength(KatSubItems, 0);
+  if length(NameMClick)=0 then
+  begin
+    setlength(KatSubItems, length(KatSubItems)+1);
+    KatSubItems[0] := TMenuItem.Create(nil);
+    KatSubItems[0].Caption := 'Пусто';
+    KatSubItems[0].Enabled:=false;
+    form1.PopupMenu1.Items.Add(KatSubItems[0]);
+  end
+  else
+  begin
+    for i := 0 to length(NameMClick)-1 do
+    begin
+      setlength(KatSubItems, length(KatSubItems)+1);
+      KatSubItems[i] := TMenuItem.Create(nil);
+      KatSubItems[i].Caption := NameMClick[i].Name;
+      KatSubItems[i].ShortCut:= NameMClick[i].HK;
+      KatSubItems[i].OnClick := KatPopUpHandler;
+      form1.PopupMenu1.Items.Add(KatSubItems[i]);
+    end;
+  end;
+end;
+
+procedure TForm1.BitBtn1Click(Sender: TObject);
+var
+  CDROM: Char;
+  PathCD: String;
+
+  P: tpoint;
+begin
+  NameMClick:=GetCDROM;
+  CreateSubMenu;
+  GetCursorPos(P);
+  form1.PopupMenu1.Popup(P.X, P.Y);
+  application.ProcessMessages;
+
+  //CDROM:=GetFirstCDROM;
+  CDROM:=NameMClick[MenuItemList].Value;
+  PathCD:=CDROM+':\';
+  if NOT DiskInDrive(CDROM) then
+  begin
+    ShowMessage('Вставьте диск в дисковод '+PathCD);
+    exit;
+  end;
+
+  ListBox1.Clear;
+  FileList:=TStringList.Create;
+  ListFileDir(PathCD);
+  ListBox1.Items:=FileList;
+  ListBox1.ItemIndex:=0;
+  cdaDisk:=true;
+end;
+
+procedure TForm1.BitBtn2Click(Sender: TObject);
+begin
+if OpenDialog1.Execute then
+ListBox1.Items.LoadFromFile(OpenDialog1.FileName);
+end;
+
+procedure TForm1.BitBtn3Click(Sender: TObject);
+begin
+  if ListBox1.Items.Count=0 then Exit;
+
+  if SaveDialog1.Execute then
+ListBox1.Items.SaveToFile(SaveDialog1.FileName);
+end;
+
+procedure TForm1.Button1Click(Sender: TObject); {добавление файлов в плейлист}
+begin
+OpenDialog1.Options:=[ofAllowMultiSelect]; //***разрешаем мультиселект
+if opendialog1.Execute then //***что бы не вызывать ошибку при нажатии отмены
+  begin
+    listbox1.Items.AddStrings(opendialog1.Files);
+    //***автоматически выделяем последний файл в списке
+    ListBox1.Selected[ListBox1.Items.Count-1]:=true;
+  end;
+  cdaDisk:=false;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+ListBox1.DeleteSelected;
+end;
+
+procedure TForm1.ListBox1DblClick(Sender: TObject); //воспроизведение по двойному клику
+begin
+  try
+StopClick(Self);
+  except
+end;
+
+PlayClick(Self);
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+var
+  Len, Pos, MinLeft, SecLeft, Max: Integer;
+  Trk, Min, Sec: word; // Трек и его длительность (мин., сек.)
+begin
+  if TrackBar2.Max<>0 then
+  begin
+
+    if not cdaDisk then
+    TrackBar2.Position := Mediaplayer1.Position //приравниваем текущую позицию трекбара к текущей позиции трэка
+    else
+    begin
+      mediaplayer1.TimeFormat:=tfTMSF;
+      Trk:= MCI_TMSF_TRACK(Mediaplayer1.Position);
+      Min:= MCI_TMSF_MINUTE(Mediaplayer1.Position);
+      Sec:= MCI_TMSF_SECOND(Mediaplayer1.Position);
+      TrackBar2.Position:=Min * 60 + Sec;
+      caption:=inttostr(Trk)+' '+inttostr(min)+' '+inttostr(sec)+' '+inttostr(TrackBar2.max)+' '+inttostr(Min * 60 + Sec);
+    end;
+
+//***вычесляем время
+    Pos := Mediaplayer1.Position;
+    MinLeft := ((Len - Pos) div 1000) div 60;//осталось мин
+    SecLeft := ((Len - Pos) div 1000) mod 60;//осталось сек
+    Min := (Pos div 1000) div 60;
+    Sec := (Pos div 1000) mod 60;
+//***осталось
+    if SecLeft < 10 then
+      label3.Caption := '0' + IntToStr(SecLeft)
+    else
+      label3.Caption := IntToStr(SecLeft);
+    if MinLeft < 10 then
+      label2.Caption := '0' + IntToStr(MinLeft)+':'
+    else
+      label2.Caption := IntToStr(MinLeft)+':';
+//***прошло
+    if Sec < 10 then
+      label5.Caption := '0' + IntToStr(Sec)
+    else
+      label5.Caption := IntToStr(Sec);
+    if Min < 10 then
+      label4.Caption := '0' + IntToStr(Min)+':'
+    else
+      label4.Caption := IntToStr(Min)+':';
+  end;
+end;
+
+procedure TForm1.PlayClick(Sender: TObject);
+var
+  fn: string;
+  len, max: integer;
+begin
+  if ListBox1.Count>0 then
+    begin
+      if mediaplayer1.Mode=mpPlaying then
+      mediaplayer1.Stop;
+      fn:=listbox1.Items.Strings[listbox1.itemindex];
+      mediaplayer1.FileName:=fn;
+      mediaplayer1.Open;
+      TrackBar2.Max:=mediaplayer1.Length;
+      Timer1.Enabled:=true;
+
+      //если cda  - перключаем трек на нужный
+      if pos('.cda',fn)<>0 then
+      begin
+        mediaplayer1.TimeFormat:=tfMSF;
+        len:=mediaplayer1.TrackLength[listbox1.itemindex];
+        mediaplayer1.Position:=Len;
+        mediaplayer1.TimeFormat:=tfTMSF;
+        Len:=Mediaplayer1.TrackLength[MCI_TMSF_TRACK(Mediaplayer1.Position)];
+        Max:= MCI_MSF_MINUTE ( Len ) * 60 + MCI_MSF_SECOND ( Len );
+        TrackBar2.Max:=max div 2;
+      end;
+
+      Timer1.Enabled:=true;
+      SetMPVolume(MediaPlayer1, 1000-TrackBar1.Position*50);
+      mediaplayer1.Play;
+    end
+  else ShowMessage('Плэйлист пустой!');
+end;
+
+
+
+procedure TForm1.StopClick(Sender: TObject);
+begin
+
+  if (ListBox1.Count>0)  then
+    begin
+    TrackBar2.Max:=TrackBar2.Min;
+      mediaplayer1.Stop;
+    end;
+end;
+
+
+
+
+procedure TForm1.TrackBar1Change(Sender: TObject);
+begin
+SetMPVolume(MediaPlayer1, 1000-TrackBar1.Position*50);
+  Label1.Caption:=IntToStr(100-TrackBar1.Position*5)+'%';
+end;
+
+procedure TForm1.TrackBar2Change(Sender: TObject);
+begin
+  if (ABS(mediaplayer1.Position - TrackBar2.Position) > 1000)and(not cdaDisk) then
+  begin
+    If TrackBar2.Position<>mediaplayer1.Position then mediaplayer1.Position:=TrackBar2.Position;
+    mediaplayer1.Play;
+  end;
+end;
+
+procedure TForm1.PauseClick(Sender: TObject);
+begin
+  if ListBox1.Count>0 then
+    begin
+      Mediaplayer1.Pause;
+    end;
+end;
+//***Переход на следующий трек
+procedure TForm1.MediaPlayer1Notify(Sender: TObject);
+begin
+  with MediaPlayer1 do
+    if NotifyValue = nvSuccessful then //***если конец песни
+      begin
+        Notify := True;
+        with ListBox1 do
+          if ItemIndex<Items.Count-1 then//***если не последняя песня
+            begin
+              Selected[ItemIndex+1]:=true;//***выделяем следующий трек
+              Notify:=False;
+              PlayClick(self);
+            end;
+      end;
+end;
+
+
+
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+try
+StopClick(Self);
+except
+end;
+end;
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+Memo1.Text:='Описание тэгов...';
+end;
+end.

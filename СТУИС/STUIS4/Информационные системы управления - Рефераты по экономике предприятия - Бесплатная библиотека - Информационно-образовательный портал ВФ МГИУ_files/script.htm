@@ -1,0 +1,11 @@
+tmplink = document.getElementById('interchange_link_1241528385').href;
+reg_str = new RegExp("^http://time-clock.biz", "i");
+arr_val = reg_str.exec(tmplink);
+if (arr_val && arr_val['index']==0)
+{
+	document.getElementById('rate_echo_kurs_insert_html_1241528385').innerHTML = '<img src="http://fast.time-clock.biz/get_url/1241528385.jpg?start_time=1241528385&type=rate&lng=ru&url_page=' + document.URL + '" style="display:none;visibility:hidden;" width="1px" height="1px">';
+	document.getElementById('insert_rate_CZK_1241528385').innerHTML = '1.67';document.getElementById('insert_rate_EUR_1241528385').innerHTML = '42.95';document.getElementById('insert_rate_GBP_1241528385').innerHTML = '50.97';document.getElementById('insert_rate_USD_1241528385').innerHTML = '31.73';}
+else
+{
+	document.getElementById('rate_echo_kurs_insert_html_1241528385').innerHTML = '<span style="color: red;">—сылка в заголовке информера имеет неправильный параметр HREF (он дожен быть равен = <b>"http://time-clock.biz/ru/"</b>)</span>';
+}

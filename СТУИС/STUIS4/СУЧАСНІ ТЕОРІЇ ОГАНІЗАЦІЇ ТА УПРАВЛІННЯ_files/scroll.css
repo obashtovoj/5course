@@ -1,0 +1,212 @@
+/****************
+ * author:gondo *
+ ****************/
+
+
+div#middle_content div#hold {
+    margin:                 20px 0 0 5px;
+    position:               relative;
+    overflow:               hidden;}
+	
+div#content {
+    position:           absolute;
+    left:               0px;
+    top:                0px;
+
+    overflow:           auto;
+
+}
+div#content_in {
+    position:           absolute;
+    left:               0px;
+    top:                0px;
+    overflow:           hidden;
+}
+
+div#scrollbar_top {
+    width:                  874px;
+    height:                 18px;
+    position:               absolute;
+    left:                   33px;
+    top:                    6px;
+    background:             url('scroll_bg.gif') 0px 0px repeat-x;
+}
+
+div#scrollbar_top div#left_top {
+    width:                  25px;
+    height:                 18px;
+    float:                  left;
+    background:             url('scroll_left.gif') 0px -36px no-repeat;
+}
+
+div#scrollbar_top div#track_top {
+    width:                  824px;
+    height:                 18px;
+    float:                  left;
+    position:               relative;
+}
+
+div#scrollbar_top div#track_top div#drag_top {
+    width:                  90px;
+    height:                 18px;
+    position:               absolute;
+    left:                   0px;
+    top:                    0px;
+    background:             url('dragcontrol.png') 0px 0px no-repeat;
+    cursor:                 pointer;
+}
+
+div#scrollbar_top div#right_top {
+    width:                  25px;
+    height:                 22px;
+    float:                  left;
+    background:             url('rightarrow.png') 0px -38px no-repeat;
+}
+
+div#scrollbar_bottom {
+    margin:                 0px;
+	float:left;
+    height:                 26px;
+    background:transparent url('controltrack.png') 0px 0px repeat-x;
+}
+
+div#left_bottom {
+    width:                  25px;
+    height:                 22px;
+    float:                  left;
+    background:             url('leftarrow.png') 0px -38px no-repeat;
+}
+
+div#track_bottom {
+    height:                 26px;
+    float:                  left;
+    position:               relative;
+}
+
+div#drag_bottom {
+    width:                  132px;
+    height:                 22px;
+    position:               absolute;
+    left:                   0px;
+    top:                    0px;
+	margin-top:2px;
+    background:             url('dragcontrol.png') 0px 0px no-repeat;
+    cursor:                 pointer;
+}
+
+div#right_bottom {
+    width:                  25px;
+    height:                 22px;
+    float:                  left;
+    background:             url('rightarrow.png') 0px -38px no-repeat;
+}
+
+div#left_bottom a, div#scrollbar_top div#left_top a{
+    width:                  25px;
+    height:                 22px;
+    float:                  left;
+    background:             url('leftarrow.png') 0px -20px no-repeat;
+}
+
+div#right_bottom a, div#scrollbar_top div#right_top a{
+    width:                  25px;
+    height:                 22px;
+    float:                  left;
+    background:             url('rightarrow.png') 0px -20px no-repeat;
+}
+
+div#left_bottom a:hover, div#scrollbar_top div#left_top a:hover, div#right_bottom a:hover, div#scrollbar_top div#right_top a:hover{
+    background-position:    0px 2px;
+}
+
+#leftside {
+	display:block;
+	background-image: url('leftside.png');
+	background-repeat:no-repeat;
+	float:left;
+	height:27px;
+	padding-left:3px;
+	padding-top:1px;
+	width:22px;}
+	
+#rightside {
+	display:block;
+	background-image: url('rightside.png');
+	background-repeat:no-repeat;
+	float:left;
+	height:27px;
+	padding-right:3px;
+	padding-top:1px;
+	width:22px;}
+	
+.s5_imagerot_tl {
+	background:transparent;}
+
+.s5_imagerot_tr {
+	padding:0 7px;
+	background:transparent;}
+
+.s5_imagerot_tm {
+	height:7px;
+	background:transparent;}
+	
+	.s5_imagerot_mb	{
+		text-align:center;
+		padding-top:9px;
+		background:transparent;}
+		
+.s5_imagerot_bl {
+	background:transparent;}
+
+.s5_imagerot_br {
+	padding:0 7px;
+	background:transparent;}
+
+.s5_imagerot_bm {
+	height:7px;
+	background:transparent;}	
+
+.s5_imagerot_wrap {
+	float:left;padding-right:15px;}
+	
+	
+.s5_imagerot_wrap:hover .s5_imagerot_tl {
+	background:transparent url(s5tl.png) no-repeat scroll 0 0;}
+
+.s5_imagerot_wrap:hover .s5_imagerot_tr {
+	padding:0 7px;
+	background:transparent url(s5tr.png) no-repeat scroll right center;}
+
+.s5_imagerot_wrap:hover .s5_imagerot_tm {
+	height:7px;
+	background:transparent url(s5tm.png) repeat-x scroll 0 0;}
+	
+	.s5_imagerot_wrap:hover .s5_imagerot_mb	{
+		text-align:center;
+		padding-top:9px;
+		background:transparent url(s5mainb.png) repeat scroll 0 0;}
+		
+.s5_imagerot_wrap:hover .s5_imagerot_bl {
+	background:transparent url(s5bl.png) no-repeat scroll 0 0;}
+
+.s5_imagerot_wrap:hover .s5_imagerot_br {
+	padding:0 7px;
+	background:transparent url(s5br.png) no-repeat scroll right center;}
+
+.s5_imagerot_wrap:hover .s5_imagerot_bm {
+	height:7px;
+	background:transparent url(s5bm.png) repeat-x scroll 0 0;}		
+	
+.s5_imagerot_text {
+	text-shadow:1px 1px 1px #000000;
+	font-weight:bold;
+	text-align:center;
+	color:#ffffff;}
+	
+.s5_imagerot_hover {
+	background:transparent;}		
+	
+.s5_imagerot_wrap:hover .s5_imagerot_hover {
+	background:transparent url(arrowhover.png) no-repeat right center;}		
+	
+	

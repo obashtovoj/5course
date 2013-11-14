@@ -1,0 +1,663 @@
+object Form1: TForm1
+  Left = 237
+  Top = 198
+  Caption = 'Sintezator'
+  ClientHeight = 392
+  ClientWidth = 748
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  OnKeyUp = FormKeyUp
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ShC3: TShape
+    Left = 179
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShC3MouseDown
+    OnMouseUp = ShC3MouseUp
+  end
+  object ShD3: TShape
+    Left = 212
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShD3MouseDown
+    OnMouseUp = ShD3MouseUp
+  end
+  object ShE3: TShape
+    Left = 244
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShE3MouseDown
+    OnMouseUp = ShE3MouseUp
+  end
+  object ShF3: TShape
+    Left = 274
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShF3MouseDown
+    OnMouseUp = ShF3MouseUp
+  end
+  object ShG3: TShape
+    Left = 306
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShG3MouseDown
+    OnMouseUp = ShG3MouseUp
+  end
+  object ShA3: TShape
+    Left = 338
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShA3MouseDown
+    OnMouseUp = ShA3MouseUp
+  end
+  object ShB3: TShape
+    Left = 370
+    Top = 232
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShB3MouseDown
+    OnMouseUp = ShB3MouseUp
+  end
+  object ShC4: TShape
+    Left = 402
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShC4MouseDown
+    OnMouseUp = ShC4MouseUp
+  end
+  object ShD4: TShape
+    Left = 434
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShD4MouseDown
+    OnMouseUp = ShD4MouseUp
+  end
+  object ShE4: TShape
+    Left = 466
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShE4MouseDown
+    OnMouseUp = ShE4MouseUp
+  end
+  object ShF4: TShape
+    Left = 498
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShF4MouseDown
+    OnMouseUp = ShF4MouseUp
+  end
+  object ShG4: TShape
+    Left = 530
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShG4MouseDown
+    OnMouseUp = ShG4MouseUp
+  end
+  object ShA4: TShape
+    Left = 562
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShA4MouseDown
+    OnMouseUp = ShA4MouseUp
+  end
+  object ShB4: TShape
+    Left = 594
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShB4MouseDown
+    OnMouseUp = ShB4MouseUp
+  end
+  object ShC5: TShape
+    Left = 626
+    Top = 231
+    Width = 33
+    Height = 161
+    Brush.Color = clWindow
+    Shape = stRoundRect
+    OnMouseDown = ShC5MouseDown
+    OnMouseUp = ShC5MouseUp
+  end
+  object ShDb3: TShape
+    Left = 196
+    Top = 231
+    Width = 28
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShDb3MouseDown
+    OnMouseUp = ShDb3MouseUp
+  end
+  object ShEb3: TShape
+    Left = 230
+    Top = 230
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShEb3MouseDown
+    OnMouseUp = ShEb3MouseUp
+  end
+  object ShGb3: TShape
+    Left = 294
+    Top = 230
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShGb3MouseDown
+    OnMouseUp = ShGb3MouseUp
+  end
+  object ShAb3: TShape
+    Left = 325
+    Top = 232
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShAb3MouseDown
+    OnMouseUp = ShAb3MouseUp
+  end
+  object ShH3: TShape
+    Left = 358
+    Top = 231
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShH3MouseDown
+    OnMouseUp = ShH3MouseUp
+  end
+  object ShDb4: TShape
+    Left = 422
+    Top = 231
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShDb4MouseDown
+    OnMouseUp = ShDb4MouseUp
+  end
+  object ShEb4: TShape
+    Left = 454
+    Top = 231
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShEb4MouseDown
+    OnMouseUp = ShEb4MouseUp
+  end
+  object ShGb4: TShape
+    Left = 518
+    Top = 231
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShGb4MouseDown
+    OnMouseUp = ShGb4MouseUp
+  end
+  object ShAb4: TShape
+    Left = 550
+    Top = 231
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShAb4MouseDown
+    OnMouseUp = ShAb4MouseUp
+  end
+  object ShH4: TShape
+    Left = 582
+    Top = 231
+    Width = 25
+    Height = 105
+    Brush.Color = clBlack
+    Shape = stRoundRect
+    OnMouseDown = ShH4MouseDown
+    OnMouseUp = ShH4MouseUp
+  end
+  object Label2: TLabel
+    Left = 194
+    Top = 366
+    Width = 11
+    Height = 20
+    Caption = 'a'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 224
+    Top = 366
+    Width = 10
+    Height = 20
+    Caption = 's'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label4: TLabel
+    Left = 254
+    Top = 369
+    Width = 11
+    Height = 20
+    Caption = 'd'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label5: TLabel
+    Left = 289
+    Top = 368
+    Width = 7
+    Height = 20
+    Caption = 'f'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label6: TLabel
+    Left = 318
+    Top = 368
+    Width = 11
+    Height = 20
+    Caption = 'g'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label7: TLabel
+    Left = 353
+    Top = 369
+    Width = 11
+    Height = 20
+    Caption = 'h'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label8: TLabel
+    Left = 385
+    Top = 367
+    Width = 5
+    Height = 20
+    Caption = 'j'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label9: TLabel
+    Left = 406
+    Top = 368
+    Width = 27
+    Height = 20
+    Caption = 'k\A'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label10: TLabel
+    Left = 441
+    Top = 368
+    Width = 22
+    Height = 20
+    Caption = 'l\S'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label12: TLabel
+    Left = 205
+    Top = 303
+    Width = 13
+    Height = 20
+    Caption = 'w'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label13: TLabel
+    Left = 237
+    Top = 303
+    Width = 11
+    Height = 20
+    Caption = 'e'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label14: TLabel
+    Left = 302
+    Top = 303
+    Width = 7
+    Height = 20
+    Caption = 't'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label15: TLabel
+    Left = 335
+    Top = 303
+    Width = 9
+    Height = 20
+    Caption = 'y'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label16: TLabel
+    Left = 366
+    Top = 303
+    Width = 11
+    Height = 20
+    Caption = 'u'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label17: TLabel
+    Left = 420
+    Top = 306
+    Width = 29
+    Height = 16
+    Caption = 'o\W'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -15
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label18: TLabel
+    Left = 454
+    Top = 310
+    Width = 25
+    Height = 16
+    Caption = 'p\E'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -15
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label11: TLabel
+    Left = 464
+    Top = 369
+    Width = 208
+    Height = 16
+    Caption = '    D    F      G      H     J       K     '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label19: TLabel
+    Left = 524
+    Top = 310
+    Width = 80
+    Height = 16
+    Caption = 'T     Y       U'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 710
+    Top = 224
+    Width = 29
+    Height = 168
+    Max = 127
+    Orientation = trVertical
+    TabOrder = 0
+    OnChange = TrackBar1Change
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Top = 8
+    Width = 161
+    Height = 377
+    ItemHeight = 13
+    TabOrder = 1
+    OnClick = ListBox1Click
+  end
+  object CheckBox1: TCheckBox
+    Left = 692
+    Top = 306
+    Width = 12
+    Height = 17
+    TabOrder = 2
+    OnMouseUp = CheckBox1MouseUp
+  end
+  object Button1: TButton
+    Left = 665
+    Top = 329
+    Width = 43
+    Height = 25
+    Caption = #1047#1072#1087#1080#1089#1100
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 665
+    Top = 360
+    Width = 43
+    Height = 25
+    Caption = #1057#1090#1086#1087
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object MainMenu1: TMainMenu
+    Left = 416
+    Top = 377
+    object K2: TMenuItem
+      Caption = 'Skins'
+      object S1: TMenuItem
+        Caption = 'shrek'
+        RadioItem = True
+        OnClick = S1Click
+      end
+      object S2: TMenuItem
+        Caption = 'spider'
+        OnClick = S2Click
+      end
+      object S5: TMenuItem
+        Caption = 'coffe'
+        OnClick = S5Click
+      end
+      object S6: TMenuItem
+        Caption = 'girl'
+        OnClick = S6Click
+      end
+    end
+    object K4: TMenuItem
+      Caption = 'Exit'
+      OnClick = K4Click
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 384
+    Top = 377
+  end
+  object XPManifest1: TXPManifest
+    Left = 467
+    Top = 378
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer2Timer
+    Left = 528
+    Top = 364
+  end
+end

@@ -1,0 +1,127 @@
+
+
+#s5_navv a span:hover, #s5_navv li:hover a span, #s5_navv li.active span, #s5_navv li.over a span{
+	color:#000000;} 
+
+#s5_navv ul li li:hover span, #s5_navv ul li li.over span, #s5_fm_ul0 ul li li:hover span, #s5_fm_ul0 ul li li.over span {
+	background:none;
+	color:#000000;}
+
+#s5_navv ul li li.lastitem a:hover {
+	background:transparent url(../images/brown/Shape5_University_ddmiddle.png) repeat-x scroll 1px 0;
+	color:#000000; } 
+	
+#s5_navv ul li ul li {
+	color:#000000;
+    background:transparent url(../images/brown/Shape5_University_ddmiddle.png) repeat-x scroll 0 0px; }
+
+	
+#s5_navv ul li ul li:hover, #s5_navv ul li ul li.over {
+    background:transparent url(../images/brown/Shape5_University_ddmiddle.png) repeat-y 0px 0px; }   	 
+	 
+#s5_navv ul li.active a {
+	background:transparent url(../images/brown/Shape5_University_menumiddle.png) repeat-x scroll left 1pt;
+    color:#000000;
+	text-shadow:1px 1px #ffffff;}
+	
+#s5_navv ul li:hover a, #s5_navv ul li.over a{
+	background:transparent url(../images/brown/Shape5_University_menumiddle.png) repeat-x scroll left 1pt;
+	color:#000000;
+	text-shadow:1px 1px 1px #ffffff;}	 
+	
+#s5_navv li.active span.s5_outer_active, #s5_navv span.s5_outer_active:hover, #s5_navv ul li:hover span.s5_outer_active {
+	background:transparent url(../images/brown/Shape5_University_menuleft.png) no-repeat scroll 0 1pt;}
+
+#s5_navv ul li:hover span.s5_outer {
+	background:transparent url(../images/brown/Shape5_University_menuleft.png) no-repeat scroll 0 1pt;}
+		
+#s5_navv ul li:hover span.s5_outerr, #s5_navv ul li a.active:hover span.span_active, #s5_navv ul li.active span.s5_outerr  {
+	background:transparent url(../images/brown/Shape5_University_menuright.png) no-repeat scroll 0 1pt;}
+		
+#s5_navv span.span_active, #s5_navv span.span_active:hover {
+	background:transparent url(../images/brown/Shape5_University_menuright.png) no-repeat scroll 0 1pt;}
+		
+#s5_navv ul li.s5_menutop, #s5_navv ul li.s5_menutop:hover {
+	background:transparent url(../images/brown/Shape5_University_ddtop.png) no-repeat scroll 0 0;}
+
+#s5_navv ul li.s5_toparrow, #s5_navv ul li.s5_toparrow:hover {
+	background:transparent url(../images/brown/Shape5_University_ddtop.png) no-repeat scroll 0 0;}
+		
+#s5_navv ul li.s5_menubottom, #s5_fm_ul0 ul li.s5_menubottom, #s5_navv ul li.s5_menubottom:hover, #s5_fm_ul0 ul li.s5_menubottom:hover {
+	background:transparent url(../images/brown/Shape5_University_ddbottom.png) no-repeat scroll 0 0;}	
+
+
+
+#s5_navv a span:hover, #s5_navv li:hover a span, #s5_navv li.active span, #s5_navv li.over a span{
+	color:#000000;} 
+
+#s5_navv ul li:hover ul li span span a, #s5_navv ul li.over ul li span span a  {
+	color:#000000;
+	}
+	
+#s5_navv ul li ul li:hover span span a, #s5_navv ul li ul li.over span span a {
+	color:#535353;
+	}
+
+#s5_navv ul li:hover ul li a, #s5_navv ul li.over ul li a  {
+	color:#000000;	
+	}
+
+#s5_navv ul li ul li:hover ul li span span a, #s5_navv ul li ul li.over ul li span span a {
+	color:#000000;
+	}	
+		
+#s5_navv ul li ul li ul li:hover span span a, #s5_navv ul li ul li ul li.over span span a  {
+	color:#000000;}
+	
+	#s5_navv ul li ul li:hover a.parent {
+		color:#000000;	
+		text-shadow:1px 1px #FFFFFF;}		
+	
+	#s5_navv ul li:hover a {
+		color:#000000;	
+		text-shadow:1px 1px #FFFFFF;}	
+		
+		
+#s5_navv ul li ul li ul li:hover ul li span span a, #s5_navv ul li ul li ul li.over ul li span span a {
+	color:#000000;}	
+
+	
+#s5_wrapback {
+	background:url(../images/brown/Shape5_University_glow.png) no-repeat scroll center 0 transparent;}
+
+#s5_menuback  {
+	background:url(../images/brown/Shape5_University_menuback.png) repeat-x scroll 0 0 transparent;}
+
+#s5_topbar {
+	background:url(../images/brown/Shape5_University_toprepeat.png) repeat scroll 0 0 transparent;}
+	
+#s5_logregtl  {
+	background:url(../images/brown/Shape5_University_tlsearch.png) no-repeat scroll 0 0 transparent;}
+	
+#s5_logregtm  {
+	background:url(../images/brown/Shape5_University_tmsearch.png) repeat-x scroll 0 0 transparent;}
+	
+#s5_logregtr  {
+	background:url(../images/brown/Shape5_University_trsearch.png) no-repeat scroll 0 0 transparent;}
+
+	
+		.s5boxmenu li:hover span {
+			background: url(../images/brown/Shape5_University_trsearchh.png) no-repeat right;} 		
+		
+		.s5boxmenu li:hover span span {
+			background: url(../images/brown/Shape5_University_tmsearchh.png) repeat-x;} 	
+			
+		.s5boxmenu li:hover{
+			background: url(../images/brown/Shape5_University_tlsearchh.png)  no-repeat 1px 3px;} 	
+
+
+#s5_logo  {
+	background:url(../images/brown/Shape5_University_logo.png) no-repeat scroll 0 0 transparent;}			
+		
+	
+#s5_rss {
+	background:url(../images/brown/Shape5_University_rssicon.png) no-repeat scroll 0 0 transparent;}
+
+	
+	

@@ -1,0 +1,30 @@
+/* Tekst na stranice*/
+td { font-size: 16px; color:000000; font-family: Arial;}
+
+/* Ssulki na stranice*/
+a:link { font-size: 14px; color:836b17; font-family: Verdana, Tahoma,  Arial;  text-decoration: none; }
+/* Ssulki na stranice:posechennay*/
+a:visited { font-size: 14px; color:836b17; font-family: Verdana, Tahoma,  Arial;  text-decoration: none;  }
+/* Ssulki na stranice:pri navedenii*/
+a:hover { font-size: 14px; color:000000; font-family: Verdana, Tahoma,  Arial; text-decoration:underline;}
+
+/*Zagolovok*/
+h1 { font-size: 21px; color:#8CC63C;  font-family: Verdana, Tahoma,  Arial; text-transform:uppercase;  margin:0px;}
+
+/* Ssulki v gorizontalnom*/
+.spec a:link { font-size: 12px; color:FFFFFF;  font-family: Verdana, Tahoma,  Arial;text-transform:uppercase;   text-decoration: none; }
+.spec a:visited { font-size: 12px; color:FFFFFF; font-family: Verdana, Tahoma,  Arial;  text-decoration:none;  text-transform:uppercase;   }
+.spec a:hover { font-size: 12px; color:ffffff; font-family: Verdana, Tahoma,  Arial;  text-decoration:none; text-transform:uppercase; }
+
+/* Ssulki v glavnom 1 yroven*/
+.link a:link { font-size: 11px; color:000000; font-family: Verdana, Tahoma,  Arial; text-transform:uppercase;  text-decoration: none; }
+.link a:visited { font-size: 11px; color:000000; font-family: Verdana, Tahoma,  Arial;  text-decoration: none; text-transform:uppercase;}
+.link a:hover { font-size: 11px; color:836b17; font-family: Verdana, Tahoma,  Arial;   text-decoration:none; text-transform:uppercase;  }
+
+/* Ssulki v glavnom 2 yroven*/
+.link1 a:link { font-size: 10px; color:000000; font-family: Verdana, Tahoma,  Arial;  text-decoration: none; }
+.link1 a:visited { font-size: 10px; color:000000; border-bottom:#000000 2px solid ; font-family: Verdana, Tahoma,  Arial;  text-decoration: none;  }
+.link1 a:hover { font-size: 10px; color:836b17;  border-bottom:#836b17 2px solid;  font-family: Verdana, Tahoma,  Arial;  text-decoration:none; }
+
+form {margin: 0px 0px 0px 0px;}
+

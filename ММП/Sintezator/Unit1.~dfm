@@ -1,0 +1,602 @@
+object Form1: TForm1
+  Left = 237
+  Top = 141
+  Width = 737
+  Height = 334
+  Caption = #1051#1072#1073#1086#1088#1072#1090#1086#1088#1085#1072#1103' '#8470'4, '#1050#1088#1072#1074#1095#1077#1085#1082#1086' '#1053'., 351 '#1073' '#1075#1088'.'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  OnKeyUp = FormKeyUp
+  OnPaint = FormPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ShC3: TShape
+    Left = 240
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShC3MouseDown
+    OnMouseUp = ShC3MouseUp
+  end
+  object ShD3: TShape
+    Left = 272
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShD3MouseDown
+    OnMouseUp = ShD3MouseUp
+  end
+  object ShE3: TShape
+    Left = 304
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShE3MouseDown
+    OnMouseUp = ShE3MouseUp
+  end
+  object ShF3: TShape
+    Left = 336
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShF3MouseDown
+    OnMouseUp = ShF3MouseUp
+  end
+  object ShG3: TShape
+    Left = 368
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShG3MouseDown
+    OnMouseUp = ShG3MouseUp
+  end
+  object ShA3: TShape
+    Left = 400
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShA3MouseDown
+    OnMouseUp = ShA3MouseUp
+  end
+  object ShB3: TShape
+    Left = 432
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShB3MouseDown
+    OnMouseUp = ShB3MouseUp
+  end
+  object ShC4: TShape
+    Left = 464
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShC4MouseDown
+    OnMouseUp = ShC4MouseUp
+  end
+  object ShD4: TShape
+    Left = 496
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShD4MouseDown
+    OnMouseUp = ShD4MouseUp
+  end
+  object ShE4: TShape
+    Left = 528
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShE4MouseDown
+    OnMouseUp = ShE4MouseUp
+  end
+  object ShF4: TShape
+    Left = 560
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShF4MouseDown
+    OnMouseUp = ShF4MouseUp
+  end
+  object ShG4: TShape
+    Left = 592
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShG4MouseDown
+    OnMouseUp = ShG4MouseUp
+  end
+  object ShA4: TShape
+    Left = 624
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShA4MouseDown
+    OnMouseUp = ShA4MouseUp
+  end
+  object ShB4: TShape
+    Left = 656
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShB4MouseDown
+    OnMouseUp = ShB4MouseUp
+  end
+  object ShC5: TShape
+    Left = 688
+    Top = 112
+    Width = 33
+    Height = 161
+    Brush.Color = 15329769
+    OnMouseDown = ShC5MouseDown
+    OnMouseUp = ShC5MouseUp
+  end
+  object ShDb3: TShape
+    Left = 258
+    Top = 112
+    Width = 28
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShDb3MouseDown
+    OnMouseUp = ShDb3MouseUp
+  end
+  object ShEb3: TShape
+    Left = 292
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShEb3MouseDown
+    OnMouseUp = ShEb3MouseUp
+  end
+  object ShGb3: TShape
+    Left = 356
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShGb3MouseDown
+    OnMouseUp = ShGb3MouseUp
+  end
+  object ShAb3: TShape
+    Left = 388
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShAb3MouseDown
+    OnMouseUp = ShAb3MouseUp
+  end
+  object ShH3: TShape
+    Left = 420
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShH3MouseDown
+    OnMouseUp = ShH3MouseUp
+  end
+  object ShDb4: TShape
+    Left = 484
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShDb4MouseDown
+    OnMouseUp = ShDb4MouseUp
+  end
+  object ShEb4: TShape
+    Left = 516
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShEb4MouseDown
+    OnMouseUp = ShEb4MouseUp
+  end
+  object ShGb4: TShape
+    Left = 580
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShGb4MouseDown
+    OnMouseUp = ShGb4MouseUp
+  end
+  object ShAb4: TShape
+    Left = 612
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShAb4MouseDown
+    OnMouseUp = ShAb4MouseUp
+  end
+  object ShH4: TShape
+    Left = 644
+    Top = 112
+    Width = 25
+    Height = 105
+    Brush.Color = 3618615
+    OnMouseDown = ShH4MouseDown
+    OnMouseUp = ShH4MouseUp
+  end
+  object Label1: TLabel
+    Left = 184
+    Top = 8
+    Width = 25
+    Height = 16
+    Caption = '127'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label2: TLabel
+    Left = 251
+    Top = 240
+    Width = 11
+    Height = 20
+    Caption = 'a'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label3: TLabel
+    Left = 283
+    Top = 240
+    Width = 10
+    Height = 20
+    Caption = 's'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label4: TLabel
+    Left = 315
+    Top = 240
+    Width = 11
+    Height = 20
+    Caption = 'd'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label5: TLabel
+    Left = 349
+    Top = 240
+    Width = 7
+    Height = 20
+    Caption = 'f'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label6: TLabel
+    Left = 379
+    Top = 240
+    Width = 11
+    Height = 20
+    Caption = 'g'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label7: TLabel
+    Left = 411
+    Top = 240
+    Width = 11
+    Height = 20
+    Caption = 'h'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label8: TLabel
+    Left = 447
+    Top = 240
+    Width = 5
+    Height = 20
+    Caption = 'j'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label9: TLabel
+    Left = 477
+    Top = 240
+    Width = 10
+    Height = 20
+    Caption = 'k'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label10: TLabel
+    Left = 511
+    Top = 240
+    Width = 5
+    Height = 20
+    Caption = 'l'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label12: TLabel
+    Left = 267
+    Top = 184
+    Width = 13
+    Height = 20
+    Caption = 'w'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label13: TLabel
+    Left = 299
+    Top = 184
+    Width = 11
+    Height = 20
+    Caption = 'e'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label14: TLabel
+    Left = 364
+    Top = 184
+    Width = 7
+    Height = 20
+    Caption = 't'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label15: TLabel
+    Left = 397
+    Top = 184
+    Width = 9
+    Height = 20
+    Caption = 'y'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label16: TLabel
+    Left = 428
+    Top = 184
+    Width = 11
+    Height = 20
+    Caption = 'u'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label17: TLabel
+    Left = 492
+    Top = 184
+    Width = 11
+    Height = 20
+    Caption = 'o'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object Label18: TLabel
+    Left = 524
+    Top = 184
+    Width = 11
+    Height = 20
+    Caption = 'p'
+    Color = clBtnFace
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = True
+    Visible = False
+  end
+  object TrackBar1: TTrackBar
+    Left = 184
+    Top = 24
+    Width = 41
+    Height = 249
+    Max = 70
+    Orientation = trVertical
+    TabOrder = 0
+    OnChange = TrackBar1Change
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Top = 8
+    Width = 161
+    Height = 257
+    ItemHeight = 13
+    TabOrder = 1
+    OnClick = ListBox1Click
+  end
+  object CheckBox1: TCheckBox
+    Left = 240
+    Top = 8
+    Width = 137
+    Height = 17
+    Caption = #1055#1086#1076#1087#1080#1089#1080' '#1082' '#1082#1083#1072#1074#1080#1096#1072#1084
+    TabOrder = 2
+    OnMouseUp = CheckBox1MouseUp
+  end
+  object MainMenu1: TMainMenu
+    Left = 688
+    Top = 72
+    object K2: TMenuItem
+      Caption = #1057#1082#1080#1085#1099
+      object S1: TMenuItem
+        Caption = #1052#1072#1082#1086#1088#1077
+        RadioItem = True
+        OnClick = S1Click
+      end
+      object S2: TMenuItem
+        Caption = #1045#1083#1100
+        OnClick = S2Click
+      end
+      object S3: TMenuItem
+        Caption = #1055#1088#1086#1073#1082#1086#1074#1086#1077' '#1076#1077#1088#1077#1074#1086
+        OnClick = S3Click
+      end
+      object S4: TMenuItem
+        Caption = #1041#1077#1088#1077#1079#1072
+        OnClick = S4Click
+      end
+      object S5: TMenuItem
+        Caption = #1057#1086#1089#1085#1072
+        OnClick = S5Click
+      end
+      object S6: TMenuItem
+        Caption = #1051#1072#1074#1088
+        OnClick = S6Click
+      end
+    end
+    object K4: TMenuItem
+      Caption = #1042#1099#1093#1086#1076
+      OnClick = K4Click
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 656
+    Top = 72
+  end
+end
