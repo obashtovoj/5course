@@ -8,10 +8,10 @@ uses
 const
   dest=500;
   des=10;
-  n_v=10;          // кол -во планет дл€ прорисовки
+  n_v=10;
 type
   TVector = record
-      x,y,z:real;     // координаты
+      x,y,z:real;
       end;
 
 type
@@ -26,7 +26,7 @@ type
     Timer1: TTimer;
     Image2: TImage;
     Image1: TImage;
-    Image3: TImage;  // космос
+    Image3: TImage;
     Panel1: TPanel;
     Button1: TButton;
     ComboBox1: TComboBox;
@@ -71,8 +71,6 @@ min:real;
 min_pos:byte;
 box,get:TRECT;
 begin
-  // переменна€ дл€ вычислени€ начальных координат планет
-end;
  g:=0.5;
  if g>2*pi then g:=0;
 
@@ -88,7 +86,7 @@ end;
    newPoints[i].y:=points[i].y;
    newPoints[i].z:=-points[i].x*sn+points[i].z*cs;
 
-    // ”знаем началные позиции
+
    newPoints[i].x:=newPoints[i].x;
    newPoints[i].y:=newPoints[i].y*cos(g)-newPoints[i].z*sin(g);
    newPoints[i].z:=newPoints[i].y*sin(g)+newPoints[i].z*cos(g);
@@ -106,9 +104,8 @@ end;
  image2.Canvas.Pen.Color:=clwhite;
  for j:=1 to v_n do
    begin
-   min:=planets[1].pos.z; // позици€ —ќлнца
+   min:=planets[1].pos.z;
    min_pos:=1;
-   // ѕроверка всех планет на рассто€ние
    for i:= 2 to v_n do
       if planets[i].pos.z>min then
            begin
@@ -116,7 +113,7 @@ end;
              min_pos:=i;
            end;
    planets[min_pos].pos.z:=-3000;
-   draw_posled[j]:=min_pos;   // пор€док прорисовки происходит от —олнца
+   draw_posled[j]:=min_pos;
    end;
  for i:= 1 to v_n do
    begin
@@ -137,7 +134,7 @@ end;
         image2.Canvas.copyRect(box,planets[draw_posled[i]].image.Bitmap.Canvas,planets[draw_posled[i]].image.Bitmap.Canvas.ClipRect);
         image2.Width:=box.Right-box.Left;
         image2.Height:=box.Bottom-box.Top;
-         //  –исование планет
+
         image1.Canvas.Draw(round(planets[draw_posled[i]].pos.x-(planets[draw_posled[i]].image.Graphic.Width div 2)*des/(des+Viewpoints[draw_posled[i]].z)),
                            round(planets[draw_posled[i]].pos.y-(planets[draw_posled[i]].image.Graphic.Height div 2)*des/(des+Viewpoints[draw_posled[i]].z)),
                            image2.Picture.Bitmap);
@@ -162,6 +159,10 @@ procedure TForm1.FormCreate(Sender: TObject);
 Var i:integer;
 begin
   AnimateWindow(Handle, 700, AW_BLEND);    //плавное по€вление формы
+  Image1.Canvas.Pixels[ 0,0]:=$FFFFFF;
+  image1.Canvas.Brush.Color:=clwhite;
+  image1.Canvas.Rectangle(Image3.Canvas.ClipRect);
+
   image3.Canvas.Brush.Color:=clblack;
   image3.Canvas.Rectangle(Image3.Canvas.ClipRect);
   for i:=1 to 1000 do
@@ -211,12 +212,15 @@ begin
     readln(fil,points[i].z);
     readln(fil,planets[i].vec);
     planets[i].grad:=0;
-    planets[i].image:=TPicture.Create;// «агрузка планет
+    planets[i].image:=TPicture.Create;
     readln(fil,str);
     planets[i].image.LoadFromFile(str);
    end;
  CloseFile(fil);
 
+ g:=pi/2;
+
+ g:=0;
  for i:=1 to v_n do
   begin
    newPoints[i]:=points[i];
