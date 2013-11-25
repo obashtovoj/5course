@@ -58,7 +58,7 @@ var
   Form1: TForm1;
   g:real;
   fil:text;
-  v_n,k:byte;
+  v_n,k:byte; // кол- во планет
 
 implementation
 
@@ -70,6 +70,7 @@ cs,sn:real;
 min:real;
 min_pos:byte;
 box,get:TRECT;
+// Алгоритм вычисления черзе cos/sin.
 begin
  g:=0.5;
  if g>2*pi then g:=0;
@@ -102,6 +103,7 @@ begin
  image1.Canvas.Brush.Color:=clred;
  image2.Canvas.Brush.Color:=clwhite;
  image2.Canvas.Pen.Color:=clwhite;
+ // Проверка удаленности планет от Солнца
  for j:=1 to v_n do
    begin
    min:=planets[1].pos.z;
@@ -112,7 +114,7 @@ begin
              min:=planets[i].pos.z;
              min_pos:=i;
            end;
-   planets[min_pos].pos.z:=-3000;
+   planets[min_pos].pos.z:=-3000; // дистанция от солнца. 
    draw_posled[j]:=min_pos;
    end;
  for i:= 1 to v_n do
@@ -132,14 +134,16 @@ begin
         image2.Picture.Bitmap.TransparentColor:=$FFFFFF;
         image2.Picture.Bitmap.Transparent:=true;
         image2.Canvas.copyRect(box,planets[draw_posled[i]].image.Bitmap.Canvas,planets[draw_posled[i]].image.Bitmap.Canvas.ClipRect);
-        image2.Width:=box.Right-box.Left;
+        // Изменение размера планет -  по удаленности
+		image2.Width:=box.Right-box.Left;
         image2.Height:=box.Bottom-box.Top;
-
+	// Рисование планеты на следующей точке с Image 2
         image1.Canvas.Draw(round(planets[draw_posled[i]].pos.x-(planets[draw_posled[i]].image.Graphic.Width div 2)*des/(des+Viewpoints[draw_posled[i]].z)),
                            round(planets[draw_posled[i]].pos.y-(planets[draw_posled[i]].image.Graphic.Height div 2)*des/(des+Viewpoints[draw_posled[i]].z)),
                            image2.Picture.Bitmap);
        end;
    end;
+   //  Разблокируем  что бы видеть конечный результат
  image1.Canvas.Unlock;
 
  end;
@@ -159,10 +163,6 @@ procedure TForm1.FormCreate(Sender: TObject);
 Var i:integer;
 begin
   AnimateWindow(Handle, 700, AW_BLEND);    //плавное появление формы
-  Image1.Canvas.Pixels[ 0,0]:=$FFFFFF;
-  image1.Canvas.Brush.Color:=clwhite;
-  image1.Canvas.Rectangle(Image3.Canvas.ClipRect);
-
   image3.Canvas.Brush.Color:=clblack;
   image3.Canvas.Rectangle(Image3.Canvas.ClipRect);
   for i:=1 to 1000 do
@@ -218,9 +218,6 @@ begin
    end;
  CloseFile(fil);
 
- g:=pi/2;
-
- g:=0;
  for i:=1 to v_n do
   begin
    newPoints[i]:=points[i];

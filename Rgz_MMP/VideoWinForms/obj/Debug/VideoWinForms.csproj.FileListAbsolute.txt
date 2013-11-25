@@ -42,24 +42,3 @@ C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Information
 C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Properties.Resources.resources
 C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.TrimForm.resources
 C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csproj.GenerateResource.Cache
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\Interop.WMPLib.dll
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\AxInterop.WMPLib.dll
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.csproj.ResolveComReference.cache
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.exe
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.pdb
-C:\Users\Oleg\Desktop\VideoWinForms\bin\Debug\VideoWinForms.exe
-C:\Users\Oleg\Desktop\VideoWinForms\bin\Debug\VideoWinForms.pdb
-C:\Users\Oleg\Desktop\VideoWinForms\bin\Debug\Interop.WMPLib.dll
-C:\Users\Oleg\Desktop\VideoWinForms\bin\Debug\AxInterop.WMPLib.dll
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.Form1.resources
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.Information.resources
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.Properties.Resources.resources
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\VideoWinForms.TrimForm.resources
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\Oleg\Desktop\VideoWinForms\obj\Debug\GenerateResource.write.1.tlog
-D:\Dropbox\Учеба\5course\Rgz_MMP\VideoWinForms\obj\Debug\Interop.WMPLib.dll
-D:\Dropbox\Учеба\5course\Rgz_MMP\VideoWinForms\obj\Debug\AxInterop.WMPLib.dll
-D:\Dropbox\Учеба\5course\Rgz_MMP\VideoWinForms\obj\Debug\VideoWinForms.csproj.ResolveComReference.cache
-D:\Dropbox\Учеба\5course\Rgz_MMP\VideoWinForms\obj\Debug\VideoWinForms.exe
-D:\Dropbox\Учеба\5course\Rgz_MMP\VideoWinForms\obj\Debug\VideoWinForms.pdb

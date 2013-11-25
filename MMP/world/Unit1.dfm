@@ -104,17 +104,17 @@ object Form1: TForm1
   object Timer1: TTimer
     Interval = 50
     OnTimer = Timer1Timer
-    Left = 40
-    Top = 112
+    Left = 8
+    Top = 56
   end
   object OpenDialog1: TOpenDialog
     DefaultExt = '.bmp'
     Filter = #1048#1082#1086#1085#1082#1080' (*.bmp)|*.bmp'
-    Left = 136
-    Top = 104
+    Left = 48
+    Top = 56
   end
   object xpmnfst1: TXPManifest
-    Left = 384
-    Top = 72
+    Left = 88
+    Top = 56
   end
 end

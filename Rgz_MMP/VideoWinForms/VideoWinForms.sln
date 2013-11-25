@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoWinForms", "VideoWinForms.csproj", "{1E954375-1486-44B7-8B63-F8567897BEC4}"
 EndProject
 Global
