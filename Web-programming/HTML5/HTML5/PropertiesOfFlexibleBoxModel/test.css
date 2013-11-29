@@ -1,0 +1,42 @@
+#parentbox {
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  width: 600px;
+  height: 200px;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+border: 1px solid #999999;
+background: #FFFBB9;
+
+ 
+}
+#box-1{
+  height: 100px;
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+background: #CCCCCC;
+}
+#box-2{
+  height: 100px;
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+background: #CCCCCC;
+}
+#box-3{
+  height: 100px;
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+background: #CCCCCC;
+}
+#box-4{
+   height: 100px;
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+background: #CCCCCC;
+}

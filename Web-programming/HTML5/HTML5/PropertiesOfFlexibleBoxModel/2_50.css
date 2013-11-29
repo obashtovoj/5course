@@ -1,0 +1,25 @@
+#parentbox {
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  width: 600px;
+
+ 
+}
+#box-1{
+  width: 100px;
+  border: 1px solid #999999;
+}
+#box-2{
+  width: 100px;
+  border: 1px solid #999999;
+}
+#box-3{
+  width: 100px;
+  border: 1px solid #999999;
+}
+#box-4{
+  width: 100px;
+  border: 1px solid #999999;
+}

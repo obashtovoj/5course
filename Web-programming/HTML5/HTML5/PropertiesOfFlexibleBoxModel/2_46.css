@@ -1,0 +1,4 @@
+#parentbox {
+  display:  -moz-box;
+  display:  -webkit-box;	
+}

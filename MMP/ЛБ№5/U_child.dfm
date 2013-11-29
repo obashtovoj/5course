@@ -1,9 +1,9 @@
 object F_child: TF_child
   Left = 254
   Top = 124
-  Width = 928
-  Height = 480
   Caption = 'Image Name'
+  ClientHeight = 441
+  ClientWidth = 912
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,10 +21,11 @@ object F_child: TF_child
     Left = 0
     Top = 0
     Width = 912
-    Height = 442
+    Height = 441
     Align = alClient
     Center = True
     Proportional = True
+    ExplicitHeight = 442
   end
   object sknprvdr1: TsSkinProvider
     AddedTitle.Font.Charset = DEFAULT_CHARSET

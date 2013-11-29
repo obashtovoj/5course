@@ -1,0 +1,59 @@
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\bin\Debug\VideoWinForms.exe
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\bin\Debug\VideoWinForms.pdb
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.csprojResolveAssemblyReference.cache
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.Form1.resources
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.Properties.Resources.resources
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.csproj.GenerateResource.Cache
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.exe
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.pdb
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\Interop.WMPLib.dll
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.csproj.ResolveComReference.cache
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\bin\Debug\Interop.WMPLib.dll
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Nikolay\Documents\Visual Studio 2012\Projects\VideoWinForms\obj\Debug\VideoWinForms.TrimForm.resources
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\Interop.WMPLib.dll
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csproj.ResolveComReference.cache
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.exe
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.pdb
+C:\Users\Nikolay\Google Диск\VideoWinForms\bin\Debug\VideoWinForms.exe
+C:\Users\Nikolay\Google Диск\VideoWinForms\bin\Debug\VideoWinForms.pdb
+C:\Users\Nikolay\Google Диск\VideoWinForms\bin\Debug\Interop.WMPLib.dll
+C:\Users\Nikolay\Google Диск\VideoWinForms\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csprojResolveAssemblyReference.cache
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Form1.resources
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Properties.Resources.resources
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.TrimForm.resources
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csproj.GenerateResource.Cache
+C:\Users\Nikolay\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Information.resources
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\Interop.WMPLib.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csproj.ResolveComReference.cache
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.exe
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.pdb
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\VideoWinForms.exe
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\VideoWinForms.pdb
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\Interop.WMPLib.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csprojResolveAssemblyReference.cache
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Form1.resources
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Information.resources
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.Properties.Resources.resources
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.TrimForm.resources
+C:\Users\Cupko\Google Диск\VideoWinForms\obj\Debug\VideoWinForms.csproj.GenerateResource.Cache
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Controls.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Imaging.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Video.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Math.dll
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.xml
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Controls.xml
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Imaging.xml
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Video.xml
+C:\Users\Cupko\Google Диск\VideoWinForms\bin\Debug\AForge.Math.xml
+D:\Dropbox\Учеба\5course\Rgz_MMP\New Folder\obj\Debug\Interop.WMPLib.dll
+D:\Dropbox\Учеба\5course\Rgz_MMP\New Folder\obj\Debug\AxInterop.WMPLib.dll
+D:\Dropbox\Учеба\5course\Rgz_MMP\New Folder\obj\Debug\VideoWinForms.csproj.ResolveComReference.cache
+D:\Dropbox\Учеба\5course\Rgz_MMP\New Folder\obj\Debug\VideoWinForms.exe
+D:\Dropbox\Учеба\5course\Rgz_MMP\New Folder\obj\Debug\VideoWinForms.pdb

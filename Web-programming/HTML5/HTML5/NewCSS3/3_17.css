@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+}
+#mainbox {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid #999999;
+  background: #FFFFFF;
+  
+  outline: 2px dashed #000099;
+  outline-offset: 30px;
+}
+ 
+#title {
+  font: bold 36px MyNewFont, verdana, sans-serif;
+  text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+color: hsla(120, 100%, 50%, 0.5);
+}
+@font-face {
+  font-family: 'MyNewFont';
+  src: url('font.ttf');
+}
+
+
+
+
+
+
+
+ 

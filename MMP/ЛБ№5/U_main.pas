@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, U_child, sSkinProvider, sSkinManager, ExtDlgs, sDialogs, Menus,U_Convert;
+  Dialogs, acImage,U_child, sSkinProvider, sSkinManager, ExtDlgs, sDialogs, Menus,U_Convert;
 
 type
   TF_main = class(TForm)

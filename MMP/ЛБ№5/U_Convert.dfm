@@ -1,10 +1,10 @@
 object F_conver: TF_conver
   Left = 500
   Top = 284
-  Width = 470
-  Height = 339
   BorderStyle = bsSizeToolWin
   Caption = 'Convert'
+  ClientHeight = 300
+  ClientWidth = 454
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

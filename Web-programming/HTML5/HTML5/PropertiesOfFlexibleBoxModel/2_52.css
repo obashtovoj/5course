@@ -1,0 +1,30 @@
+#parentbox {
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  width: 600px;
+border: 1px solid #999999;
+
+ 
+}
+#box-1{
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+}
+#box-2{
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+}
+#box-3{
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+}
+#box-4{
+  -moz-box-flex: 1 ;
+  -webkit-box-flex: 1 ;
+border: 1px solid #999999;
+}

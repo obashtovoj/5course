@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+  <script>
+    
+    function initiate(){
+      var age = document.getElementById("myage");
+      age.addEventListener("change",changerange,false);
+      document.information.addEventListener("invalid",validation,true);
+      document.getElementById("send").addEventListener("click",send,false);
+      document.information.addEventListener("input",checkval,false);
+    }
+     function changerange()
+    {
+     var output=document.getElementById("range");
+     var calc=age.value-20;
+     if(calc<20)
+      {
+       calc=0;
+       age.value=20;
+      }
+      output.innerHTML=calc+' to '+age.value;
+    }
+
+    function validation(e){
+      var elem = e.target;
+      elem.style.background = '#FFDDDD';
+    }
+    function sendit(){
+      var valid = document.information.checkValidity();
+      if(valid){
+        document.information.submit();
+      }
+    }
+    function checkval(e){
+      var elem = e.target;
+      if(elem.validity.valid){
+        elem.style.background = '#FFFFFF';
+      }else{
+        elem.style.background = '#FFDDDD';
+      }
+    }
+    window.addEventListener("load", initiate);
+  </script>
+</head>
+<body>
+  <section id="form">
+    <form name="information" method="get" >
+      Nickname: 
+      <input pattern="[A-Za-z]{3,}" name="nickname" id="nickname" maxlength="10" required>
+      Email:  
+      <input type="email" name="myemail" id="myemail" required>
+      Range of age:
+      <input type="range" name="myage" id="myage" min="0" max="80" step="20" value="20"> 
+      <output> From 0 to 20</output>
+      <input type="button" id="send" value="Sign Up">
+    </form>
+  </section>
+</body>
+</html>

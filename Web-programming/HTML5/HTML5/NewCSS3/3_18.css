@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+body {
+  text-align: center;
+}
+#mainbox {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+ 
+  border: 29px solid;
+  border-image: url("diamonds.png") 29 stretch;
+}
+
+
+#title {
+  font: bold 36px MyNewFont, verdana, sans-serif;
+  text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+color: hsla(120, 100%, 50%, 0.5);
+}
+@font-face {
+  font-family: 'MyNewFont';
+  src: url('font.ttf');
+}
+
+
+
+
+ 
+
+
+ 

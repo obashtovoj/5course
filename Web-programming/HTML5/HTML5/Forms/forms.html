@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+</head>
+<body>
+  <section id="form">
+    <form name="myform" id="myform" method="get" >
+	<input type="text" name="name" id="name"><br>
+	<input type="email" name="myemail" multiple><br>
+	<input type="search" name="mysearch" autofocus><br>
+	<input type="url" name="myurl"><br>
+	
+	<input type="number" name="mynumber" min="0" max="10" step="5"><br>
+	<input type="range" name="mynumbers" min="0" max="10" step="5"><br>
+	<input type="date" name="mydate"><br>
+	<input type="week" name="myweek"><br>
+	<input type="month" name="mymonth"><br>
+	<input type="time" name="mytime"><br>
+	<input type="datetime" name="mydatetime"><br>
+	<input type="datetime-local" name="mylocaldatetime"><br>
+	<input type="color" name="mycolor">
+	<input pattern="[0-9]{5}" name="pcode" title="insert the 5 numbers of your postal code"><br>
+	
+	<datalist id="mydata">
+ 	 <option value="123123123" label="Phone 1">
+	 <option value="456456456" label="Phone 2">
+	</datalist>
+
+	<input type="tel" name="myphone" list="mydata"><br>
+	<progress value="0" max="100">0%</progress><br>
+	<meter value="60" min="0" max="100" low="40" high="80" optimum="100">60</meter><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<input type="submit" value="Send">
+ 
+    </form>
+  </section>
+</body>
+</html>

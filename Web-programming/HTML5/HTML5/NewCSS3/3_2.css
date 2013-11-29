@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+#mainbox {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid #999999;
+  background: #FFFFFF;
+}
+#title {
+  font: bold 36px verdana, sans-serif;
+}

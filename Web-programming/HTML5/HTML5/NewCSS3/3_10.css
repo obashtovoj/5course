@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+#mainbox {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid #999999;
+  background: #FFFFFF;
+}
+#title {
+  font: bold 36px MyNewFont, verdana, sans-serif;
+  text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
+@font-face {
+  font-family: 'MyNewFont';
+  src: url('font.ttf');
+}

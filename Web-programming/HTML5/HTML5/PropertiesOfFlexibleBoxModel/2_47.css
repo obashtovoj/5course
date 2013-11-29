@@ -1,0 +1,8 @@
+#parentbox
+{
+display: -moz-box;
+display: -webkit-box;
+
+-moz-box-orient: vertical;
+-webkit-box-orient: vertical;
+}

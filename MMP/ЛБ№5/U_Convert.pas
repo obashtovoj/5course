@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms, FileCtrl,
-  Dialogs, StdCtrls, sGroupBox, sSkinProvider, sButton, sLabel, sEdit, U_child;
+  Dialogs, StdCtrls, sGroupBox, sSkinProvider, sButton, sLabel,acImage, sEdit, U_child;
 
 type
   TF_conver = class(TForm)

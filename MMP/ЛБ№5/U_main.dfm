@@ -1,9 +1,9 @@
 object F_main: TF_main
   Left = 254
   Top = 124
-  Width = 928
-  Height = 480
   Caption = 'View & Convert'
+  ClientHeight = 421
+  ClientWidth = 912
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -4188,8 +4188,8 @@ object F_main: TF_main
     ThirdParty.ThirdUpDown = ' '
     ThirdParty.ThirdScrollBar = ' '
     ThirdParty.ThirdStaticText = ' '
-    Left = 472
-    Top = 8
+    Left = 480
+    Top = 16
   end
   object sknprvdr1: TsSkinProvider
     AddedTitle.Font.Charset = DEFAULT_CHARSET
@@ -4200,7 +4200,7 @@ object F_main: TF_main
     SkinData.SkinSection = 'FORM'
     TitleButtons = <>
     Left = 520
-    Top = 8
+    Top = 16
   end
   object mm_main: TMainMenu
     Left = 72
@@ -4245,6 +4245,6 @@ object F_main: TF_main
       'iles (*.emf)|*.emf|Metafiles (*.wmf)|*.wmf'
     Options = [ofHideReadOnly, ofAllowMultiSelect, ofFileMustExist, ofEnableSizing]
     Left = 432
-    Top = 4
+    Top = 20
   end
 end

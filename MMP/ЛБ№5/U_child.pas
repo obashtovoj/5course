@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, sSkinProvider, ExtCtrls, acImage, jpeg, Clipbrd, TeeProcs,
+  Dialogs, sSkinProvider, ExtCtrls, jpeg, Clipbrd,acImage, TeeProcs,
   TeEngine, Chart, pngimage;
 
 type

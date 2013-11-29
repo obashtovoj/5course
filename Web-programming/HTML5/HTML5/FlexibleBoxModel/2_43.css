@@ -1,0 +1,11 @@
+#main_section {
+  	-moz-box-flex; 1;
+	-webkit-box-flex: 1;
+ 	 margin: 20px;
+}
+#main_aside {
+  width: 220px;
+  margin: 20px 0px;
+  padding: 20px;
+  background: #CCCCCC;
+}

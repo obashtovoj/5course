@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+}
+#mainbox {
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  border: 1px solid #999999;
+  background: #FFFFFF;
+
+  -moz-border-radius: 20px 10px 30px 50px;
+  -webkit-border-radius: 20px 10px 30px 50px;
+   border-radius: 20px 10px 30px 50px;
+
+}
+#title {
+  font: bold 36px verdana, sans-serif;
+}

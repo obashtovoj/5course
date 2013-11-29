@@ -1,0 +1,35 @@
+unit CHILDWIN;
+
+interface
+
+uses Winapi.Windows, System.Classes, Vcl.Graphics, Vcl.Forms, Vcl.Controls,
+  Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Menus, System.SysUtils, System.StrUtils;
+
+type
+  TMDIChild = class(TForm)
+    Image1: TImage;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+   // procedure FileExt(Fname: String);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+{$R *.dfm}
+
+
+uses Main;
+
+
+procedure TMDIChild.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+ Action := caFree;
+end;
+
+
+
+
+end.

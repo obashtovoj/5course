@@ -1,0 +1,21 @@
+#main_footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #999999;
+}
+
+article {
+  background: #FFFBCC;
+  border: 1px solid #999999;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+article footer {
+  text-align: right;
+}
+time {
+  color: #999999;
+}
+figcaption {
+  font: italic 14px verdana, sans-serif;
+}
