@@ -138,25 +138,6 @@ begin
    newBitmap.SaveToFile(DestFileName);
    Icon.Free;
    newBitmap.Free;
- {newBitMap:=TBitMap.Create;
- Icon := TIcon.Create;
- Icon.LoadFromFile(SourceFileName);
- GetIconInfo(Icon.Handle, iinfo);
- WinDC := getDC(handle);
- srcDC := CreateCompatibleDC(WinDC);
- destDC := CreateCompatibleDC(WinDC);
- oldBitmap := SelectObject(destDC, iinfo.hbmColor);
- oldBitmap := SelectObject(srcDC, iinfo.hbmMask);
- // Функция BitBlt выполняет передачу битовых блоков данных о цвете, соответствующих прямоугольнику пикселей из заданного исходного контекста устройства в целевой контекст устройства.
- // SRCAND	Комбинирует цвета исходных и целевых прямоугольников при помощи использования булева оператора И (AND).  - черный
- // SRCPAINT	Комбинирует цвета источникового и целевого прямоугольников при помощи использования булева оператора ИЛИ (OR). - норм
- BitBlt(destdc, 0 , 0 , Icon.width, Icon.height, srcDC, 0 , 0 , SRCPAINT);
- NewBitmap.handle := SelectObject(destDC, oldBitmap);
- DeleteDC(destDC);
- DeleteDC(srcDC);
- DeleteDC(WinDC);
- newBitmap.SaveToFile(DestFileName);
- newBitmap.Free;       }
 end;
 
 

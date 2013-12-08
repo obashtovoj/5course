@@ -189,7 +189,8 @@ end;
 procedure TForm1.Timer3Timer(Sender: TObject);
 begin
 if(label8.caption)=timetostr(DateTimePicker4.Time) then
-     ShellExecute(handle, 'open', pchar(Edit4.Text), nil, nil, SW_SHOWNORMAL);
+    if ShellExecute(Form1.Handle,'open',PCHAR(i),nil,nil,SW_SHOWNORMAL)<=32 then
+showmessage('Невозможно открыть файл');
 end;
 
 
